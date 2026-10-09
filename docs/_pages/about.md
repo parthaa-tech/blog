@@ -6,50 +6,18 @@ date: 2025-01-21 15:01:35 +0300
 image: "/images/about_me_art.png"
 ---
 
-# 🙋🏻‍♀️ Hey there! It's Swagatika
+# 👋🏼 Hey there! It's Swagatika
 
-Versatile Jekyll theme designed for content creators, writers, and developers! - Download from [here](https://github.com/satishw/jekyll-theme-aura)
+There isn't much to say about me, so I'll keep it short.
 
-It’s an ideal solution for personal websites, blogs, small business sites, or simple project site can be hosted on platforms like GitHub Pages, Netlify, Cloudflare Pages, or your own server.
+I'm just a little human in this vast world, trying to learn, understand, and make something worthwhile of my time here before I die.
 
-This theme is a fork of the [Vonge theme](https://github.com/CloudCannon/vonge-jekyll-bookshop-template) developed by CloudCannon. Unlike Vonge, Aura is fully compatible with GitHub Pages.
+I've completed my Master's in Computer Applications, and honestly, I'm still figuring out what comes next. I don't have everything planned out, and I don't think I need to. For now, I'm learning, exploring, making mistakes, changing my mind, and trying to understand what I really want from this life.
 
-## Features
+I created this little corner of the internet as a diary for myself, a place to collect my thoughts, ideas, experiences, opinions, and everything else that crosses my mind. Some of it might be about technology or things I learn, some about life, and some might just be random thoughts I don't want to forget.
 
-- Works with GitHub Pages (Free hosting)
-- Responsive design
-- Blog section
-- Projects Section
-- Testimonials section (with star ratings)
-- Tag pages
-- Scroll to top button
-- Color Infoboxes
-- Table of Content
-- FAQ on any post or page
-- Code highlight
-- Image gallery
-- Image lazy loading
-- Embed Youtube videos
-- Social sharing
-- Logo support
-- Supports contact form (Formspree)
-- Supports MailChimp and Sendy.co newsletter
-- Supports Disqus comments
-- Supports Google Analytics
-- Optimized for mobile devices
-- Compatible with modern browsers
-- Fast performance
-- Free updates and support!
+I don't know what this journey will look like or who I'll become along the way. Maybe that's the point.
 
-## License
+For now, this is just me, trying to figure things out, one day at a time.
 
-The MIT License (MIT)
-
-## FAQ
-
-<details>
-  <summary>Why is your website so awesome?</summary>
-  <p>It's the magic of caffeine, late-night coding, and a sprinkling of unicorn dust. Seriously, we just try to make sure it’s easy to use and full of fun!</p>
-</details>
-
-<details> <summary>How do you ensure such great design consistency?</summary> <p>We’ve got a secret army of design ninjas who move swiftly through the pixels, making sure everything aligns perfectly. 🥷🖥️</p> </details>
+Welcome to my little corner of the internet.
