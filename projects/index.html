@@ -17,7 +17,11 @@ layout: default
       <article class="c-project-card col col-4 col-d-6 col-t-12">
         <div class="c-project-card__content">
           <a href="{{ site.baseurl }}{{ project.url }}" class="c-project-card__image">
-            <img loading="lazy" src="{{ site.baseurl }}{{ project.image }}" alt="{{ project.title }}">
+            <img
+              loading="lazy"
+              src="{% if project.image contains '://' %}{{ project.image }}{% else %}{{ project.image | relative_url }}{% endif %}"
+              alt="{{ project.title | escape }}"
+            >
           </a>
           <div class="c-project-card__info">
             <div class="c-project-card__info-wrap">

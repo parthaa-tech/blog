@@ -2,7 +2,11 @@
   {% if page.previous.url %}
   <a class="post__prev" href="{{ site.baseurl }}{{page.previous.url}}">
     <div class="prev__image">
-      <img loading="lazy" src="{{site.baseurl}}{{page.previous.image}}" alt="{{ page.title }}">
+      <img
+        loading="lazy"
+        src="{% if page.previous.image contains '://' %}{{ page.previous.image }}{% else %}{{ page.previous.image | relative_url }}{% endif %}"
+        alt="{{ page.previous.title | escape }}"
+      >
     </div>
     <div class="prev__box">
       <span class="post__nav post__nav__prev">Prev post</span>
@@ -18,7 +22,11 @@
       <h2 class="post__nav__title">{{page.next.title}}</h2>
     </div>
     <div class="next__image">
-      <img loading="lazy" src="{{site.baseurl}}{{page.next.image}}" alt="{{ page.title }}">
+      <img
+        loading="lazy"
+        src="{% if page.next.image contains '://' %}{{ page.next.image }}{% else %}{{ page.next.image | relative_url }}{% endif %}"
+        alt="{{ page.next.title | escape }}"
+      >
     </div>
   </a>
   {% endif %}

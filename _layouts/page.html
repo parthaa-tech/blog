@@ -2,24 +2,29 @@
 layout: default
 ---
 
+{% if page.title and page.title != "" %}
 <div class="container">
     <div class="c-page-heading">
         <h1 class="c-page-heading__title">{{ page.title }}</h1>
     </div>
 </div>
+{% endif %}
 
+{% if page.image and page.image != "" %}
 <div class="container">
     <div class="row">
         <div class="col col-12">
             <div class="c-page-image animate">
-                <img alt="{{ page.image-alt }}" 
-                     data-cms-original-src="{{ page.image }}" 
-                     loading="lazy" 
-                     src="{{ site.baseurl }}{{ page.image }}">
+                <img
+                    alt="{{ page.image-alt | default: page.title | escape }}"
+                    data-cms-original-src="{{ page.image }}"
+                    loading="lazy"
+                    src="{% if page.image contains '://' %}{{ page.image }}{% else %}{{ site.baseurl }}{{ page.image }}{% endif %}">
             </div>
         </div>
     </div>
 </div>
+{% endif %}
 
 <div class="container animate">
     <article class="post">

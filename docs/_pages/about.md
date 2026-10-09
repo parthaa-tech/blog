@@ -1,19 +1,21 @@
 ---
 layout: page
-title:  About
+title: About
 description: This is about page
-date:   2025-01-21 15:01:35 +0300
-image:  '/images/about.jpeg'
+date: 2025-01-21 15:01:35 +0300
+image: "/images/about_me_art.png"
 ---
-# This is a Demo of Aura Jekyll Theme
+
+# 🙋🏻‍♀️ Hey there! It's Swagatika
 
 Versatile Jekyll theme designed for content creators, writers, and developers! - Download from [here](https://github.com/satishw/jekyll-theme-aura)
 
-It’s an ideal solution for personal websites, blogs, small business sites, or simple project site can be hosted on platforms like GitHub Pages, Netlify, Cloudflare Pages, or your own server. 
+It’s an ideal solution for personal websites, blogs, small business sites, or simple project site can be hosted on platforms like GitHub Pages, Netlify, Cloudflare Pages, or your own server.
 
 This theme is a fork of the [Vonge theme](https://github.com/CloudCannon/vonge-jekyll-bookshop-template) developed by CloudCannon. Unlike Vonge, Aura is fully compatible with GitHub Pages.
 
 ## Features
+
 - Works with GitHub Pages (Free hosting)
 - Responsive design
 - Blog section
@@ -40,9 +42,11 @@ This theme is a fork of the [Vonge theme](https://github.com/CloudCannon/vonge-j
 - Free updates and support!
 
 ## License
+
 The MIT License (MIT)
 
 ## FAQ
+
 <details>
   <summary>Why is your website so awesome?</summary>
   <p>It's the magic of caffeine, late-night coding, and a sprinkling of unicorn dust. Seriously, we just try to make sure it’s easy to use and full of fun!</p>

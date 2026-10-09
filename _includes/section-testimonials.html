@@ -27,7 +27,12 @@
                 <div class="c-testimonial-card__client-meta">
                   {% if testimonial-item.image %}
                     <div class="c-testimonial-card__image-container">
-                      <img class="c-testimonial-card__client-avatar" src="{{ testimonial-item.image }}" alt="{{ testimonial-item.name }}">
+                      <img
+                        class="c-testimonial-card__client-avatar"
+                        src="{% if testimonial-item.image contains '://' %}{{ testimonial-item.image }}{% else %}{{ testimonial-item.image | relative_url }}{% endif %}"
+                        alt="{{ testimonial-item.name | escape }}"
+                        loading="lazy"
+                      >
                     </div>
                   {% endif %}
                   <div class="c-testimonial-card__client-info">

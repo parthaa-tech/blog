@@ -40,7 +40,11 @@
           <div class="c-hero__right">
             {% if site.data.settings.hero__settings.image %}
               <div class="c-hero__image">
-                <img loading="lazy" src="{{ site.baseurl }}{{ site.data.settings.hero__settings.image }}" alt="{{ site.data.settings.hero__settings.hero_image_alt }}">
+                <img
+                  loading="lazy"
+                  src="{% if site.data.settings.hero__settings.image contains '://' %}{{ site.data.settings.hero__settings.image }}{% else %}{{ site.data.settings.hero__settings.image | relative_url }}{% endif %}"
+                  alt="{{ site.data.settings.hero__settings.hero_image_alt | default: site.data.settings.hero__settings.image_alt | escape }}"
+                >
               </div>
             {% endif %}
           </div>

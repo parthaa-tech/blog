@@ -12,15 +12,35 @@
               <span id="ityped"></span>
             </div>
           </div>
+            <form
+              class="c-subscribe__form"
+              action="{{ site.data.settings.newsletter__settings.newsletter_identifier }}"
+              method="post"
+              accept-charset="utf-8"
+            >
+              <label class="screen-reader-text" for="newsletter-email">
+                Email address
+              </label>
 
-          <form class="c-subscribe__form validate" action="{{ site.data.settings.newsletter__settings.newsletter_identifier }}"
-            method="POST" accept-charset="utf-8" id="membedded-subscribe-form" name="membedded-subscribe-form" target="_blank" novalidate>
-            <label class="screen-reader-text" for="mce-EMAIL">Email address</label>
-            <input class="c-subscribe__form-email required email" id="mce-EMAIL" type="text" name="EMAIL" placeholder="Your email address">
-            
-            <button class="c-button c-button--primary c-button--large" id="membedded-subscribe" type="submit" name="subscribe">{{ site.data.settings.newsletter__settings.newsletter_button }}</button>
-          </form>
+              <input
+                class="c-subscribe__form-email required email"
+                id="newsletter-email"
+                type="email"
+                name="email"
+                placeholder="Your email address"
+                autocomplete="email"
+                required
+              >
 
+              <input type="hidden" name="embed" value="1">
+
+              <button
+                class="c-button c-button--primary c-button--large"
+                type="submit"
+              >
+                {{ site.data.settings.newsletter__settings.newsletter_button }}
+              </button>
+            </form>
         </div>
       </div>
     </div>

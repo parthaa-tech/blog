@@ -6,14 +6,19 @@ layout: default
   <div class="container">
     <div class="row">
 
-      {%if page.image %}
-      <div class="col col-6 col-d-12">
-        <div class="post-image">
-          <img loading="lazy" src="{{site.baseurl}}{{page.image}}" alt="{{page.title}}">
+      {% if page.image %}
+        <div class="col col-6 col-d-12">
+          <div class="post-image">
+            <img
+              src="{% if page.image contains '://' %}{{ page.image }}{% else %}{{ page.image | relative_url }}{% endif %}"
+              alt="{{ page.image_alt | default: page.title | escape }}"
+              loading="eager"
+              fetchpriority="high"
+              decoding="async"
+            >
+          </div>
         </div>
-      </div>
-      {%endif %}
-
+      {% endif %}
       <div class="col col-6 col-d-12">
         <div class="post__info">
 
@@ -30,7 +35,11 @@ layout: default
 
           <div class="post__meta">
             <div class="post__author-image">
-              <img loading="lazy" src="{{ site.baseurl }}{{ site.data.settings.author_image }}" alt="{{ site.data.settings.author_name }}">
+              <img
+                loading="lazy"
+                src="{% if site.data.settings.author_image contains '://' %}{{ site.data.settings.author_image }}{% else %}{{ site.data.settings.author_image | relative_url }}{% endif %}"
+                alt="{{ site.data.settings.author_name | escape }}"
+              >
             </div>
 
             <div class="post__meta-bottom">

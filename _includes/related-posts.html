@@ -61,7 +61,11 @@
                   {% if post.image %}
                   <div class="image-wrap">
                     <a class="article__image" href="{{ site.baseurl }}{{ post.url }}">
-                      <img loading="lazy" src="{{ site.baseurl }}{{ post.image }}" alt="{{ post.title }}">
+                      <img
+                        loading="lazy"
+                        src="{% if post.image contains '://' %}{{ post.image }}{% else %}{{ post.image | relative_url }}{% endif %}"
+                        alt="{{ post.title | escape }}"
+                      >
                     </a>
                   </div>
                   {% endif %}
@@ -87,7 +91,11 @@
               
                     <div class="article__meta">
                       <div class="article__author-image">
-                        <img loading="lazy" src="{{ site.baseurl }}{{ site.data.settings.author_image }}" alt="{{ site.data.settings.author_name }}">
+                        <img
+                          loading="lazy"
+                          src="{% if site.data.settings.author_image contains '://' %}{{ site.data.settings.author_image }}{% else %}{{ site.data.settings.author_image | relative_url }}{% endif %}"
+                          alt="{{ site.data.settings.author_name | escape }}"
+                        >
                       </div>
                       <div class="article-info">
                         <div class="article__author-name">{{ site.data.settings.author_name }}</div>
